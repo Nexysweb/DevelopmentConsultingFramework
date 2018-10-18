@@ -4,6 +4,16 @@ This framework presents a way to structure a low level frontend UI component lib
 
 ## The request object
 
+The request object will serve as input to any HTTP request and, in its simplest form, is defined as
+
+```
+{
+  method: 'GET',
+  url: '/my/url',
+  data: {/* payload data */ },
+}
+```
+
 ## List of form components
 
 #### Wrapper
