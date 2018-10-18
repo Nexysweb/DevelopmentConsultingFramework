@@ -2,20 +2,6 @@
 
 This framework presents a way to structure a low level frontend UI component library. For every new project we suggest to wrap a UI library (e.g. Material, Ant design, ...) with the following structure so that your team is not dependent on any particulat framework or version furthermore these concepts can then be applied across different media (web browser, mobile phone, etc.).
 
-## The request object
-
-The request object will serve as input to any HTTP request and, in its simplest form, is defined as
-
-```
-{
-  method: 'GET',
-  url: '/my/url',
-  data: {/* payload data */ },
-}
-```
-
-Whenever an HTTP request is meant, the idea is to pass this object and nothing else in order to avoid function with args like `myFunction(url, postData, ...)` and rather have `myFunction(request, ...)` where `request` is the above well defined object.
-
 ## List of form components
 
 These are components that allow the user to input data into the app.
@@ -113,3 +99,17 @@ Below is a list of basic UI components.
 #### Tabs
 
 #### Tooltip
+
+## The request object
+
+The request object will serve as input to any HTTP request and, in its simplest form, is defined as
+
+```
+{
+  method: 'GET',
+  url: '/my/url',
+  data: {/* payload data */ },
+}
+```
+
+Whenever an HTTP request is meant, the idea is to pass this object and nothing else in order to avoid function with args like `myFunction(url, postData, ...)` and rather have `myFunction(request, ...)` where `request` is the above well defined object.
