@@ -1,6 +1,6 @@
 # UIPropsFramework
 
-This framework presents a way to structure a low level frontend UI component library. 
+This framework presents a way to structure a low level frontend UI component library. For every new project we suggest to wrap a UI library (e.g. Material, Ant design, ...) with the following structure so that your team is not dependent on any particulat framework or version furthermore these concepts can then be applied across different media (web browser, mobile phone, etc.).
 
 ## The request object
 
@@ -19,7 +19,6 @@ Whenever an HTTP request is meant, the idea is to pass this object and nothing e
 ## List of form components
 
 These are components that allow the user to input data into the app.
-
 
 ### Form
 
@@ -54,8 +53,20 @@ All form have an associated `errors` object which will handle all error messages
 This component wraps all form components and will handle errors.
 
 ##### Props
-
-
+```
+/** name of the input field */
+name: React.PropTypes.string.isRequired,
+/** Object of type {wrapperName: [array of errors]} */
+errors: React.PropTypes.array.isRequired,
+/** Wrapped input field */
+children: React.PropTypes.element.isRequired,
+/** Label on top of the input field (optional) */
+label: React.PropTypes.string,
+/** If true, red asterisk will be displayed in front of the label */
+mandatory: React.PropTypes.bool,
+/** If given, helper text in gray will be displayed beyond the field */
+helper: React.PropTypes.string
+```
 
 #### Input
 
@@ -71,7 +82,7 @@ This component wraps all form components and will handle errors.
 
 #### Checkbox
 
-#### Boolean
+#### Toggle
 
 #### Datepicker
 
@@ -83,3 +94,21 @@ This component wraps all form components and will handle errors.
 
 
 ## List of basic components
+
+#### Table
+
+#### Alert
+
+#### Badge
+
+#### Icon
+
+#### Loader
+
+#### Panel
+
+#### Progress bar
+
+#### Tabs
+
+#### Tooltip
