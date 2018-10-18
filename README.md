@@ -92,10 +92,7 @@ helper: React.PropTypes.string
 
 ### Form Generator
 
-
 ## List of basic components
-
-#### Table
 
 #### Alert
 
@@ -108,6 +105,8 @@ helper: React.PropTypes.string
 #### Panel
 
 #### Progress bar
+
+#### Table
 
 #### Tabs
 
