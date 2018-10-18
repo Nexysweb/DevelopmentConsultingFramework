@@ -1,5 +1,6 @@
 # UI Component Framework
 
+
 This framework presents a way to structure a low level frontend UI component library. For every new project we suggest to wrap a UI library (e.g. Material, Ant design, ...) with the following structure so that your team is not dependent on any particulat framework or version furthermore these concepts can then be applied across different media (web browser, mobile phone, etc.).
 
 ## List of form components
@@ -99,6 +100,32 @@ Below is a list of basic UI components.
 #### Tabs
 
 #### Tooltip
+
+## Business Components
+
+### Key Value
+
+This component typically displays the content of a JSON object in the form of `key` => `value`.
+
+#### Example
+
+```
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john@doe.com"
+}
+```
+
+turns into something like:
+
+|               |              |
+| ------------- |-------------:|
+| First Name    | John         |
+| Last Name     | Doe          |
+| Email         | john@doe.com |
+
+## Layout Components
 
 ## The request object
 
