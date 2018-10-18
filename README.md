@@ -1,4 +1,4 @@
-# UIPropsFramework
+# UI Component Framework
 
 This framework presents a way to structure a low level frontend UI component library. For every new project we suggest to wrap a UI library (e.g. Material, Ant design, ...) with the following structure so that your team is not dependent on any particulat framework or version furthermore these concepts can then be applied across different media (web browser, mobile phone, etc.).
 
