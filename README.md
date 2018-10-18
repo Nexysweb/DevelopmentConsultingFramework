@@ -35,7 +35,7 @@ The form content is saved in one object `{}` where the attribute name is the fie
 
 ### Errors
 
-All form have an associated `errors` object which will handle all error messages.
+All form have an associated `errors` object which will handle all error messages. Every field can have multiple error messages. We suggest to linearize nested field names.
 
 #### Example
 
@@ -93,6 +93,8 @@ helper: React.PropTypes.string
 ### Form Generator
 
 ## List of basic components
+
+Below is a list of basic UI components.
 
 #### Alert
 
