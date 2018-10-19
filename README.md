@@ -125,6 +125,19 @@ turns into something like:
 | Last Name     | Doe          |
 | Email         | john@doe.com |
 
+### `n-n` view
+
+#### Example
+
+A typical example would be: company - user
+
+|              |            |                    |
+| ------------- |----------:|-------------------:|
+| Company A    | User 1     | Position user 1    |
+| Company B    | User 2     | Position user 2    |
+| Company C    | User 3     | Position user 3    |
+| Company D    | User 4     | Position user 4    |
+
 ## Layout Components
 
 ## The request object
