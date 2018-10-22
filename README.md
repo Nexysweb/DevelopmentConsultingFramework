@@ -3,6 +3,8 @@
 
 This framework presents a way to structure a low level frontend UI component library. For every new project we suggest to wrap a UI library (e.g. Material, Ant design, ...) with the following structure so that your team is not dependent on any particulat framework or version furthermore these concepts can then be applied across different media (web browser, mobile phone, etc.).
 
+In order to preview in VSCode press: ⇧⌘V
+
 ## List of form components
 
 These are components that allow the user to input data into the app.
@@ -124,6 +126,40 @@ turns into something like:
 | First Name    | John         |
 | Last Name     | Doe          |
 | Email         | john@doe.com |
+
+### List
+
+List renders a matrix defined by values and columns.
+Its functionality and appearance is specified with a configuration object:
+
+```
+{
+  edit: requestCrud.update,
+  delete: requestCrud.delete
+  layout: {
+    simple: true,
+    bodyOnly: true
+  },
+  filters: {
+    search: { props: ['label'] },
+    status: ['active', 'pending', 'rejected']
+  },
+  ...
+}
+```
+
+there are essentially three main types of list:
+
+* viewable (default)
+* editable
+* selectable
+
+
+| col1          | col2         | actions
+| ------------- |--------------|--------------|
+| value_1_1     | value_1_2    | edit, delete
+| value_2_1     | value_2_2    | edit, delete
+
 
 ### `n-n` view
 
