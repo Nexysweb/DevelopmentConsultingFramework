@@ -9,6 +9,18 @@ In order to preview in VSCode press: ⇧⌘V
 
 These are components that allow the user to input data into the app.
 
+Generally, a form encapsulates all input elements that are wrapped in a `wrapper` component.
+
+### Input Elements
+
+Inputs element is an abstract concept. All the following form components inherit from `input element`. The props are described below
+
+* `value`: default value of the input
+* `onChange`: function that manage onChange event
+* `name`: name of the element
+* `values` (only for `select` like elements): list of possible values
+* `placeholder` *optional*: element placeholder
+
 ### Form
 
 The form content is saved in one object `{}` where the attribute name is the field name and its value the actual value.
