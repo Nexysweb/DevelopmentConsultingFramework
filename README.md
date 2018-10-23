@@ -15,12 +15,6 @@ Generally, a form encapsulates all input elements that are wrapped in a `wrapper
 
 Inputs element is an abstract concept. All the following form components inherit from `input element`. The props are described below
 
-* `value`: default value of the input
-* `onChange`: function that manage onChange event
-* `name`: name of the element
-* `values` (only for `select` like elements): list of possible values
-* `placeholder` *optional*: element placeholder
-
 |  props name               |  description                                               |   |
 | --------------------------|------------------------------------------------------------|--:|
 | `value`                   | default value of the input                                 | - |
