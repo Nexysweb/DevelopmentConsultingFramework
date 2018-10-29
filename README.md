@@ -1,7 +1,3 @@
-# Development Consulting Framework
-
-Please use the web version: https://nexysweb.github.io/DevlopmentConsultingFramework/
-
 This repository describes a framework that can be used when delivering complex technological solutions with externals or while working internally on a product.
 
 ## Single source of truth
