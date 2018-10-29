@@ -46,3 +46,5 @@ We find the storybook to be extremely helpful to bridge the gap between the tech
 ## UI Library
 
 There are many UI libraries available today and relying on them mostly significantly fasten the development process. We think you should not be 100% dependent on any third party library and for this we have come up with a "UI props vocabulary" that I think really helps developer be more efficient. The idea is to *wrap* all components from a foreing library into your component with props that are well defined and that are always the same across all your projects. 
+
+[UI Props Page](./ui-props)
