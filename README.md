@@ -28,7 +28,7 @@ We discourage:
 
 With that way of working, no file is ever deleted, there are no `myFile_v1_12.3_john.docx` type of file which are very hard to manage and everybody can access ALL resources at anytime on any media simply via a browser. 
 
-## From the Vision to the implementation
+## From the Vision to the Implementation
 
 ### Target Operating Model (TOM)
 
@@ -41,3 +41,8 @@ What gets really interesting when working with Git and MD docs is that files and
 https://storybook.js.org/
 
 We find the storybook to be extremely helpful to bridge the gap between the technical team and the business team. We suggest to use it to have the dev team focusing solely on UI/UX and then iterate with the business team outside of the app context. 
+
+
+## UI Library
+
+There are many UI libraries available today and relying on them mostly significantly fasten the development process. We think you should not be 100% dependent on any third party library and for this we have come up with a "UI props vocabulary" that I think really helps developer be more efficient. The idea is to *wrap* all components from a foreing library into your component with props that are well defined and that are always the same across all your projects. 
