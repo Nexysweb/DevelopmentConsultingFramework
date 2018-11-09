@@ -190,6 +190,36 @@ A typical example would be: company - user
 | Company C    | User 3     | Position user 3    |
 | Company D    | User 4     | Position user 4    |
 
+## Charts Components
+
+### Simple Charts
+
+This components returns any of the following combinations
+
+* line chart
+* bar chart
+* area chart
+* scatter chart
+
+an example of input data
+
+```
+const data = [
+  {name: 'A', x: 40, y: 24},
+  {name: 'B', x: 30, y: 13},
+  {name: 'C', x: 20, y: 98},
+  {name: 'D', x: 10, y: 19}
+];
+
+```
+
+```
+const lines = [
+  {name: 'a', color: colors[0], seriesType: 'linear'},
+  {name: 'b', color: colors[1], seriesType: 'linear'}
+]
+```
+
 ## Layout Components
 
 ## The request object
