@@ -5,7 +5,7 @@ This framework presents a way to structure a low level frontend UI component lib
 
 In order to preview in VSCode press: ⇧⌘V
 
-Most examples documented below can be seen in a storybook here: https://nexysweb.github.io/erpAnt/
+Most examples documented below can be seen live in a storybook at: https://nexysweb.github.io/erpAnt/
 
 ## List of form components
 
