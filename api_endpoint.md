@@ -1,6 +1,8 @@
-# No Traditional Rest API Architecture
+# API Endpoint Architecture
 
-We think that the traditional `GET`, `POST`, `PUT`, `DELETE` HTTP verbs for structuring a CRUD REST API is outdated and some newer structure relying more on JSON are more appropriate.
+When interacting with a data model (CRUD), we think that the traditional `GET`, `POST`, `PUT`, `DELETE` HTTP verbs request for structuring a CRUD REST API can be hard to maintain and to work with.
+
+Rather, we prefer to leverage JSON and decrease the amount of endpoints. Also to avoid errors while parsing requests that have parameters and their URL (i.e. `/user/:uuid/detail`), we only have `POST` endpoints with no query parameters (this rule doesn't have to be followed all the time but we think it helps keeping consistency across the API endpoints).
 
 ## Structure Proposition for an API that interacts with a CRUD
 
