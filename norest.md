@@ -94,7 +94,7 @@ When inserting a new record. Here `params` can be ignored.
 
 ## Realtime and GraphQL
 
-Having a consistent way of interacting the data model allows to very easily create additional layers on top of it. Typically a GraphQL server or websocket server.
+Having a consistent way of interacting the data model allows to very easily create additional layers on top of it. Typically a GraphQL server or a websocket server without needing to map every single endpoint manually.
 
 ## resources
 
