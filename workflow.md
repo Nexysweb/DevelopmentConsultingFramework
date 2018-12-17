@@ -1,5 +1,7 @@
 # Workflow
 
+Graphical representation: https://docs.google.com/drawings/d/1znKoTO5zAVYrKmZebXy_5SX_3RJOhQsRAa2bhnWOBmE/edit
+
 Workflows are an intergral part of business processes. We formalise them here so that their implementation is easier and different stakeholders can speak the same language.
 
 We will formalise a workflow as a [finite state machine](https://en.wikipedia.org/wiki/Finite-state_machine) that is made of `n` states (nodes) and `m` transitions (vertices).
