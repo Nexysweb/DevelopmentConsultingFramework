@@ -53,6 +53,14 @@ The data mappers hence is a function with `in = ("Money owned: 50 USD")` and `ou
 
 `out = f(in)`
 
+#### Scheduler
+
+Chains can be scheduled like a [cron](https://en.wikipedia.org/wiki/Cron#Overview).
+
+#### Reusability and composability
+
+chains can (and should) be reused. Given their design it is also easy to include a chain in a chain creating multi level chains.
+
 ### Email sending
 
 is handled via API request
