@@ -36,6 +36,21 @@ A chain is a list of API calls that happen in series
 
 Wraps an API request and maps local workflow state (the one associated with the chain) with the API request. It also indicates in which order API requests are executed
 
+
+#### Data Mappers
+
+are functions that take a set of args `(in_1, in_2, ...)` and returns another set `(out_1, out_2, ...)`. Note that the cardinality and the individual types of `i` and `o` can be different.
+
+Data mappers are typically included between two chain units
+
+##### Example
+
+As input we have a text: `Money owned: 50 USD` and we would like to extract the amount and the currency.
+
+The data mappers hence is a function with `in = ("Money owned: 50 USD")` and `out = (50, 'USD')`
+
+`out = f(in)`
+
 ### Email sending
 
 is handled via API request
