@@ -24,6 +24,19 @@ Every transaction has a set of actions that are associated to it. There can be d
 
 ### Entity CRUD
 
-### API Call
+### API Request
+
+API requests (internal and external) are bundled in ready to use building blocks.
+
+### Chain
+
+A chain is a list of API calls that happen in series
+
+#### Chain Unit
+
+Wraps an API request and maps local workflow state (the one associated with the chain) with the API request. It also indicates in which order API requests are executed
 
 ### Email sending
+
+is handled via API request
+
