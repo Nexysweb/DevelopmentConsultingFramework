@@ -41,6 +41,17 @@ When inserting a new record. Here `params` can be ignored.
 {"data": { JSON Object that will be inserted}}
 ```
 
+#### Errors
+
+errors are of the format:
+
+```
+{
+  "country" : ["this field is required"]
+  "height" : ["this must be a positive number", "this mut be larger than 100cm", "this must be smaller than 250cm"]
+}
+```
+
 #### Example
 
 say we are inserting a new record in an entity `Car`. The expected attributes are `model`, `brand`.
