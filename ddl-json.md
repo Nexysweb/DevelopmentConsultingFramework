@@ -75,14 +75,15 @@
 
 ## Config
 
-| Arg Name    |  Possible values                                                | Default     |
-|-------------|-----------------------------------------------------------------|-------------|
-| sqlTable    | *SQL table name*                                                | entity name |
-| isUuid      | uses uuid as identifier                                         | `false`     |
-| logUser     | saves user id                                                   | `false`     |
-| isLog       | add log logic in table                                          | `false`     |
-| logTable    | creates mirror log table                                        | `false`     |
-| extends     | extends a particular preprogrammed entity (e.g. user)           | `null`      |
+| Arg Name    |  Possible values                                                                 | Default     |
+|-------------|----------------------------------------------------------------------------------|-------------|
+| sqlTable    | *SQL table name*                                                                 | entity name |
+| isUuid      | uses uuid as identifier                                                          | `false`     |
+| logUser     | saves user id                                                                    | `false`     |
+| isLog       | add log logic in table                                                           | `false`     |
+| logTable    | creates mirror log table                                                         | `false`     |
+| extends     | extends a particular preprogrammed entity (e.g. user)                            | `null`      |
+| uniqueSet   | array with combination of params that are unique (e.g `["countryId", "userId"]`) | `null` .    |
  
 If the name of the table differs from the entity name, it is indicate
 
