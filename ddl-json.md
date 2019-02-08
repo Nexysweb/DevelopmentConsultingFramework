@@ -36,7 +36,7 @@
 | Name       | *field name*                                                    | -           |
 | fieldType  | {int, long, string, decimal, boolean, date, datetime, foreign}  | string      |
 | isOptional | true/false                                                      | `false`     |
-| constraints| see section                                                     | `[]`        |
+| constraints| [see section](#constraints)                                                     | `[]`        |
 | ui         | {textarea, datepicker, slider, etc..}                           | `fieldType` |
 
 ### Constraints
