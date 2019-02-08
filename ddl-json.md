@@ -82,7 +82,8 @@
 | logUser     | saves user id                                                   | `false`     |
 | isLog       | add log logic in table                                          | `false`     |
 | logTable    | creates mirror log table                                        | `false`     |
-
+| extends     | extends a particular preprogrammed entity (e.g. user)           | `null`      |
+ 
 If the name of the table differs from the entity name, it is indicate
 
 ## Variable types
