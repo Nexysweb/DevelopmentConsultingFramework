@@ -57,12 +57,24 @@
 ### Constraints
 
 #### Contraint Types
-* 0: equal
-* 1: greater than
-* 2: less than
-* 3: greater than or equal
-* 4: less than or equal
-* 5: Regex
+* 0: equal `=`
+* 1: greater than `>`
+* 2: less than `<`
+* 3: greater than or equal `>=`
+* 4: less than or equal `<=`
+* 5: Regex 
+
+## Config
+
+| Arg Name    |  Possible values                                                | Default     |
+|-------------|-----------------------------------------------------------------|-------------|
+| sqlTable    | *SQL table name*                                                | entity name |
+| isUuid      | uses uuid as identifier                                         | `false`     |
+| logUser     | saves user id                                                   | `false`     |
+| isLog       | add log logic in table                                          | `false`     |
+| logTable    | creates mirror log table                                        | `false`     |
+
+If the name of the table differs from the entity name, it is indicate
 
 ## Variable types
 
