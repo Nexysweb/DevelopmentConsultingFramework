@@ -5,8 +5,8 @@
 ```
 {
   "name": "country",
-  "sql": {
-    "table": "country",
+  "config": {
+    "sqlTable": "country",
     "isUuid": true,
     "log": false
   },
@@ -19,6 +19,10 @@
       "constraints": [
         {"name": "must be greater or", "value": 3, "typeId": 3}
       ]
+    },
+    {
+      "description": "description",
+      "field
     }
   ]
 }
@@ -27,12 +31,13 @@
 ## Params
 
 
-| Arg Name   |  Possible values                                                |   |
-|------------|-----------------------------------------------------------------|---|
-| Name       | *field name*                                                    |   |
-| fieldType  | {int, long, string, decimal, boolean, date, datetime, foreign}  |   |
-| isOptional | true/false                                                      |   |
-| constraints| see section                                                     |   |
+| Arg Name   |  Possible values                                                | Default     |
+|------------|-----------------------------------------------------------------|-------------|
+| Name       | *field name*                                                    | -           |
+| fieldType  | {int, long, string, decimal, boolean, date, datetime, foreign}  | string      |
+| isOptional | true/false                                                      | `false`     |
+| constraints| see section                                                     | `[]`        |
+| ui         | {textarea, datepicker, slider, etc..}                           | `fieldType` |
 
 ### Constraints
 
