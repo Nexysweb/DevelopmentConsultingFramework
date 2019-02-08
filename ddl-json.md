@@ -34,10 +34,30 @@
 | Arg Name   |  Possible values                                                | Default     |
 |------------|-----------------------------------------------------------------|-------------|
 | Name       | *field name*                                                    | -           |
-| fieldType  | {int, long, string, decimal, boolean, date, datetime, foreign}  | string      |
+| fieldType  | [see section](#field%20types)                                   | string      |
 | isOptional | true/false                                                      | `false`     |
 | constraints| [see section](#constraints)                                                     | `[]`        |
 | ui         | {textarea, datepicker, slider, etc..}                           | `fieldType` |
+
+
+### Field Types
+
+#### Int
+
+#### Long
+
+#### String
+
+#### Boolean
+
+#### Decimal
+
+#### Date
+
+#### DateTime
+
+#### Foreign
+
 
 ### Constraints
 
