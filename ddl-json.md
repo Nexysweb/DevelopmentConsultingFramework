@@ -17,7 +17,7 @@
       "fieldType": "string",
       "isOptional": false,
       "constraints": [
-        {"name": "must be greater or", "value": 3, "typeId": 3}
+        {"value": 3, "typeId": 3}
       ]
     },
     {
@@ -56,6 +56,12 @@
 | foreign  | country              |
 
 ### Constraints
+
+| Arg Name    |  Possible values                                                | Default     |
+|-------------|-----------------------------------------------------------------|-------------|
+| typeId      | [see section](#constraint-types)                                | -           |
+| value       | value of the constraint                                         | -           |
+| msg         | overrides default message                                       | -           |
 
 #### Contraint Types
 * 0: equal `=`
