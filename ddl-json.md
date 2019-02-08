@@ -80,7 +80,11 @@ If the name of the table differs from the entity name, it is indicate
 
 ### Explicit variables
 
-Explicit variables need to be explicitly specified when inserting a record
+Explicit variables need to be explicitly specified when inserting a record (are part of the payload)
+
+### Implicit variables
+
+are not explicitly stated. E.g. taken from auth (`userId`)
 
 ### System variables
 
