@@ -63,7 +63,7 @@
 | value       | value of the constraint                                         | -           |
 | msg         | overrides default message                                       | -           |
 
-#### Contraint Types
+#### Constraint Types
 * 0: equal `=`
 * 1: greater than `>`
 * 2: less than `<`
