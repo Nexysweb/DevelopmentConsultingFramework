@@ -64,6 +64,8 @@
 * 3: greater than or equal `>=`
 * 4: less than or equal `<=`
 * 5: Regex 
+* 6: belongs to a predefined set: [9, 87, 34]
+* 7: async call to API (link to an API request)
 
 ## Config
 
