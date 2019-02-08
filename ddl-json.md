@@ -64,14 +64,15 @@
 | msg         | overrides default message                                       | -           |
 
 #### Constraint Types
-* 0: equal `=`
-* 1: greater than `>`
-* 2: less than `<`
-* 3: greater than or equal `>=`
-* 4: less than or equal `<=`
-* 5: Regex 
-* 6: belongs to a predefined set: [9, 87, 34]
-* 7: async call to API (link to an API request)
+* 0: equal `=` (number)
+* 1: greater than `>` (number(
+* 2: less than `<` (number
+* 3: greater than or equal `>=` (number)
+* 4: less than or equal `<=` (number)
+* 5: length (string)
+* 6: Regex (string)
+* 7: belongs to a predefined set: [9, 87, 34] (all)
+* 8: async call to API (link to an API request) (string)
 
 ## Config
 
