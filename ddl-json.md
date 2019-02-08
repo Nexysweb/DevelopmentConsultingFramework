@@ -22,7 +22,8 @@
     },
     {
       "description": "description",
-      "field
+      "isOptional": true,
+      "ui": "textarea"
     }
   ]
 }
