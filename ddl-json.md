@@ -31,33 +31,28 @@
 ## Params
 
 
-| Arg Name   |  Possible values                                                | Default     |
-|------------|-----------------------------------------------------------------|-------------|
-| Name       | *field name*                                                    | -           |
-| fieldType  | [see section](#field%20types)                                   | string      |
-| isOptional | true/false                                                      | `false`     |
-| constraints| [see section](#constraints)                                                     | `[]`        |
-| ui         | {textarea, datepicker, slider, etc..}                           | `fieldType` |
+| Arg Name    |  Possible values                                                | Default     |
+|-------------|-----------------------------------------------------------------|-------------|
+| Name        | *field name*                                                    | -           |
+| fieldType   | [see section](#field-types)                                     | string      |
+| isOptional  | true/false                                                      | `false`     |
+| constraints | [see section](#constraints)                                     | `[]`        |
+| ui          | {textarea, datepicker, slider, etc..}                           | `fieldType` |
 
 
 ### Field Types
 
-#### Int
-
-#### Long
-
-#### String
-
-#### Boolean
-
-#### Decimal
-
-#### Date
-
-#### DateTime
-
-#### Foreign
-
+| Type     | Example values       |
+|----------|----------------------|
+| int      | 1, 2, 3              |
+| long     | 65432345, 2345432345 |
+| string   | hello                |
+| boolean  | true / false         |
+| deimal   | 23.34                |
+| date     | 2019-01-31           |
+| datetime | 2019-01-31 15:23     |
+| time     | 15:23                |
+| foreign  | country              |
 
 ### Constraints
 
