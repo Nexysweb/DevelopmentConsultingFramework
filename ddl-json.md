@@ -16,7 +16,7 @@
       "name": "code",
       "fieldType": "string",
       "isOptional": false,
-      constraints: [
+      "constraints": [
         {"name": "must be greater or", "value": 3, "typeId": 3}
       ]
     }
