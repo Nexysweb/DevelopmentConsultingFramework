@@ -20,7 +20,7 @@ It is important for all stakeholders to understand that these texts cannot be up
 
 ## Emails
 
-Emails are an important part of any systems and their content needs to bicontinuously managed and kept up to date.
+Emails are an important part of any systems and their content needs to be continuously managed and kept up to date.
 
 We use the Email module of Digis to manage emails. This allows to manage different languages and separate their management from the application. Unlike system strings, the update is immediately reflected in the live system.
 
