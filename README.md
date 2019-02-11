@@ -7,6 +7,9 @@ For this, we believe the best technology available is Git.
 
 One file is created and many collaborators can iterate on it without losing any information at anytime.
 
+see
+* [String Management](./string_management)
+
 ### Continuum
 
 Typically, there are different media on which information is shared however the overlap is important between these different media. A typical example is a presentation containing workflows that are then replicated in the documentation. Working with files that can be reused and saved in one place makes it easy to create presentations quickly based on an existing documentation or generate documentation from a presentation.
