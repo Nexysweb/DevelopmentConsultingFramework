@@ -7,7 +7,8 @@
   "name": "country",
   "config": {
     "sqlTable": "country",
-    "isUuid": true,
+    "withUuid": true,
+    "withOrder" false,
     "log": false
   },
   "params": [
@@ -79,7 +80,8 @@
 | Arg Name    |  Possible values                                                                 | Default     |
 |-------------|----------------------------------------------------------------------------------|-------------|
 | sqlTable    | *SQL table name*                                                                 | entity name |
-| isUuid      | uses uuid as identifier                                                          | `false`     |
+| withUuid    | uses uuid as identifier                                                          | `false`     |
+| withOrder   | allows ordering (UI: drag/drop)                                                  | `false`     |
 | logUser     | saves user id                                                                    | `false`     |
 | isLog       | add log logic in table                                                           | `false`     |
 | logTable    | creates mirror log table                                                         | `false`     |
