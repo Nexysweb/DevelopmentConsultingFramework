@@ -56,6 +56,17 @@
 | time     | 15:23                |
 | foreign  | country              |
 
+#### mapping SQL JSON-ddl
+
+```
+
+BigDecimal => Decimal 10, 4
+Int => int(11)
+Long => bigint(20)
+LocalDateTime => Datetime
+LocalDate => Datetime
+```
+
 ### Constraints
 
 | Arg Name    |  Possible values                                                | Default     |
