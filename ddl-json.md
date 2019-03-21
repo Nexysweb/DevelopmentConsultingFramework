@@ -3,6 +3,58 @@
 ## Example
 
 ```
+{"models": [
+  {
+    name: "Country",
+    table: "country",
+    uuid: true,
+    params: [
+      {arg: "name", type: "String", "column": "name_country"},
+      {arg: "code", type: "String", optional: true},
+    ]
+  }, {
+    name: "Timezone",
+    uuid: true,
+    params: [
+      {arg: "offset", type: "Long"},
+    ]
+  }, {
+    name: "City",
+    uuid: true,
+    params: [
+      {arg: "name", type: "String"},
+      {arg: "country", type: "Country"},
+      {arg: "timezone", type: "Timezone", optional: true},
+    ]
+  }, {
+    name: "Address",
+    uuid: true,
+    params: [
+      {arg: "street", type: "String"},
+      {arg: "number", type: "Long", optional: true},
+      {arg: "city", type: "City"},
+    ]
+  }, {
+    name: "Company",
+    uuid: false,
+    params: [
+      {arg: "name", type: "String"},
+      {arg: "country", type: "Country", optional: true},
+    ]
+  }, {
+    name: "Employee",
+    uuid: true,
+    params: [
+      {arg: "name", type: "String"},
+      {arg: "company", type: "Company"},
+    ]
+  }
+]
+```
+
+*following example is work in progress*
+
+```
 {
   "name": "country",
   "config": {
@@ -28,6 +80,7 @@
     }
   ]
 }
+]
 ```
 
 ## Params
