@@ -103,7 +103,7 @@
 | long     | 65432345, 2345432345 |
 | string   | hello                |
 | boolean  | true / false         |
-| deimal   | 23.34                |
+| decimal  | 23.34                |
 | date     | 2019-01-31           |
 | datetime | 2019-01-31 15:23     |
 | time     | 15:23                |
@@ -160,7 +160,7 @@ Explicit variables need to be explicitly specified when inserting a record (are 
 
 ### Implicit variables
 
-are not explicitly stated. E.g. taken from auth (`userId`)
+Implicit variables are not explicitly stated. E.g. taken from auth (`userId`)
 
 ### System variables
 
