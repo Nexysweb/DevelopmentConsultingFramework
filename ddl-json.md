@@ -79,7 +79,26 @@
       "ui": "textarea"
     }
   ]
-}
+},
+{
+    "name":"ProductEnvVar",
+    "permissions": [
+      {"name": "product_ci", "type": "w"},
+      {"name": {"user": {"id": true}, "type": "i", "implicitVar": "userId" }}
+    ],
+    "params":[
+      {"arg": "instance", "type":"Instance", "column":"instance_id","optional":false,
+        "permissions": [{"name": "product_ci", "readOrWrite": "w"}]
+      },
+      {"arg": "envId", "type":"Int","optional":false},
+      {"arg": "product", "type":"Product", "column": "product_id","optional":false},
+      {"arg": "productService", "type":"ProductService", "column": "product_service_id","optional":true},
+      {"arg": "secretKey", "type":"String", "column": "keyy","optional":false},
+      {"arg": "value", "type":"String","optional":false},
+      {"arg": "logUser", "type":"User", "column": "log_user_id","optional":false},
+      {"arg": "logDateAdded", "type":"LocalDateTime","optional":false}
+    ]
+  }
 ]
 ```
 
