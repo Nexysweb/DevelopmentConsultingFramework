@@ -129,15 +129,15 @@ LocalDate => Datetime
 | msg         | overrides default message                                       | -           |
 
 #### Constraint Types
-* 0: equal `=` (number)
-* 1: greater than `>` (number(
-* 2: less than `<` (number
-* 3: greater than or equal `>=` (number)
-* 4: less than or equal `<=` (number)
-* 5: length (string)
-* 6: Regex (string)
-* 7: belongs to a predefined set: [9, 87, 34] (all)
-* 8: async call to API (link to an API request) (string)
+* 1: equal `=` (number)
+* 2: greater than `>` (number(
+* 3: less than `<` (number
+* 4: greater than or equal `>=` (number)
+* 5: less than or equal `<=` (number)
+* 6: length (string)
+* 7: Regex (string)
+* 8: belongs to a predefined set: [9, 87, 34] (all)
+* 9: async call to API (link to an API request) (string)
 
 ## Config
 
