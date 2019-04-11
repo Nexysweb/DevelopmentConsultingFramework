@@ -84,7 +84,7 @@
     "name":"ProductEnvVar",
     "permissions": [
       {"name": "product_ci", "type": "w"},
-      {"name": {"user": {"id": true}, "type": "i", "implicitVar": "userId" }}
+      {"name": "mypermission", "attributeVar": {"user": {"id": true}, "type": "i", "implicitVar": "userId" }}
     ],
     "params":[
       {"arg": "instance", "type":"Instance", "column":"instance_id","optional":false,
