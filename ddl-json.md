@@ -136,15 +136,17 @@ We define an array of entities. All entities have attributes and are assigned pr
 
 | Type     | Example values       |
 |----------|----------------------|
-| int      | 1, 2, 3              |
-| long     | 65432345, 2345432345 |
-| string   | hello                |
-| boolean  | true / false         |
-| decimal  | 23.34                |
-| date     | 2019-01-31           |
-| datetime | 2019-01-31 15:23     |
-| time     | 15:23                |
-| foreign  | Country              |
+| Int      | 1, 2, 3              |
+| Long     | 65432345, 2345432345 |
+| String   | hello                |
+| Boolean  | true / false         |
+| Decimal  | 23.34                |
+| Date     | 2019-01-31           |
+| Datetime | 2019-01-31 15:23     |
+| Time     | 15:23                |
+| -        | Country              |
+
+Every entity name automatically becomes a type. Hence the last example of the table where the type is `Country`, referring to the entity `Country` and creating a relation with that other entity.
 
 #### mapping SQL JSON-ddl
 
