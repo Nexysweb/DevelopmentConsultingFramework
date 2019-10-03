@@ -20,7 +20,7 @@
       {
         "name": "name",
         "type": "String",
-        "optonal": false
+        "optional": false
       }
     ]
   }
