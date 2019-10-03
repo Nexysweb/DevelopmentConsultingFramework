@@ -106,6 +106,21 @@ We define an array of entities. All entities have attributes and are assigned pr
 
 ## Entity
 
+| Arg Name    |  Possible values                                                                 | Example     |
+|-------------|----------------------------------------------------------------------------------|-------------|
+| name        | name of the entity. has to start with a capital letter                           | "Country"   |
+| table       | name of the SQL table. This field is optional, if not given the table is the snake case version of name                                                                                                        | `my_country`|
+| uuid        | boolean, if set to true, the primary key is a uuid vs a id                       | `false`     |
+| withOrder   | allows ordering (UI: drag/drop)                                                  | `false`     |
+| description | description of the entity, optional                                              |             |
+| logUser     | saves user id                                                                    | `false`     |
+| isLog       | add log logic in table                                                           | `false`     |
+| logTable    | creates mirror log table                                                         | `false`     |
+| extends     | extends a particular preprogrammed entity (e.g. user)                            | `null`      |
+| uniqueSet   | array with combination of params that are unique (e.g `["countryId", "userId"]`) | `null`      |
+
+## Attribute
+
 
 | Arg Name    |  Possible values                                                | Default     |
 |-------------|-----------------------------------------------------------------|-------------|
@@ -113,6 +128,7 @@ We define an array of entities. All entities have attributes and are assigned pr
 | type        | [see section](#field-types)                                     | string      |
 | optional    | true/false                                                      | `false`     |
 | constraints | [see section](#constraints)                                     | `[]`        |
+| description | description of the attribute                                    |             |
 | ui          | {textarea, datepicker, slider, etc..}                           | `fieldType` |
 
 
@@ -160,18 +176,7 @@ LocalDate => Datetime
 * 8: belongs to a predefined set: [9, 87, 34] (all)
 * 9: async call to API (link to an API request) (string)
 
-## Config
 
-| Arg Name    |  Possible values                                                                 | Default     |
-|-------------|----------------------------------------------------------------------------------|-------------|
-| sqlTable    | *SQL table name*                                                                 | entity name |
-| withUuid    | uses uuid as identifier                                                          | `false`     |
-| withOrder   | allows ordering (UI: drag/drop)                                                  | `false`     |
-| logUser     | saves user id                                                                    | `false`     |
-| isLog       | add log logic in table                                                           | `false`     |
-| logTable    | creates mirror log table                                                         | `false`     |
-| extends     | extends a particular preprogrammed entity (e.g. user)                            | `null`      |
-| uniqueSet   | array with combination of params that are unique (e.g `["countryId", "userId"]`) | `null`      |
 
 ## Variable types
 
