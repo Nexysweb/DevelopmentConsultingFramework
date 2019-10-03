@@ -81,12 +81,15 @@ export default class App extends React.Component {
     const {content} = this.state;
     return (<div className="container">
       <h1>DDL Checker</h1>
+      <p>Details <a href="https://nexysweb.github.io/DevelopmentConsultingFramework/ddl-json">here</a></p>
+
       {this.renderError()}
       {this.renderSuccess()}
+
       <div className="row">
-      <div className="col-md-12">
-        <textarea className="form-control" style={{minWidth: '100%', height: '400px'}} placeholder={'insert your json here'} value={content} onChange={this.handleChange}/>
-      </div>
+        <div className="col-md-12">
+          <textarea className="form-control" style={{minWidth: '100%', height: '400px'}} placeholder={'insert your json here'} value={content} onChange={this.handleChange}/>
+        </div>
       </div>
       <div className="row">
         <div className="col">
