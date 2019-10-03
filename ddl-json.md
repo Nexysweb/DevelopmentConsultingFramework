@@ -46,6 +46,8 @@ We define an array of entities. All entities have attributes and are assigned pr
 
 Every entity name automatically becomes a type. Hence the last example of the table where the type is `Country`, referring to the entity `Country` and creating a relation with that other entity.
 
+a more formal version can be found in https://github.com/Nexysweb/DevelopmentConsultingFramework/blob/master/src/types.js
+
 #### mapping SQL JSON-ddl
 
 ```
@@ -76,7 +78,9 @@ LocalDate => Datetime
 * 8: belongs to a predefined set: [9, 87, 34] (all)
 * 9: async call to API (link to an API request) (string)
 
+## Checking format
 
+The format can be checked with the `schema-validation`: https://github.com/Nexysweb/DevelopmentConsultingFramework/blob/master/src/schema-validation.js
 
 ## Variable types
 
