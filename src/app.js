@@ -15,7 +15,7 @@ export default class App extends React.Component {
   constructor (props) {
     super(props);
 
-    this.state = {content: null, errors: null};
+    this.state = {content: '', errors: null};
   }
 
   handleSubmit = () => {

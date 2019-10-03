@@ -1,8 +1,8 @@
-const Joi = require('joi');
-const Types = require('./types.js')
+import Joi from 'joi';
+import { jvmTypes as Types } from './types';
 
 const modelParamSchema = Joi.object().keys({
-  arg: Joi.string().alphanum().required(),
+  name: Joi.string().alphanum().required(),
   column: Joi.string().optional(),
   type: Joi.string().alphanum().required(),
   optional: Joi.boolean(),
@@ -17,27 +17,27 @@ const modelSchema = Joi.object().keys({
   uuid: Joi.boolean().optional(),
   table: Joi.string().optional(),
   description: Joi.string().optional(),
-  params: Joi.array().items(modelParamSchema).unique((a, b) => a.arg === b.arg).required(),
+  fields: Joi.array().items(modelParamSchema).unique((a, b) => a.name === b.name).required(),
   permissions: Joi.array().optional(),
   constraints: Joi.array()
 });
 
-const modelDefSchema = Joi.object().keys({
-  models: Joi.array().items(modelSchema).required()
-}).unknown();
+const modelDefSchema = Joi.array().items(modelSchema).required();
 
-const typeDefault = Types.jvmTypes;
 
 const checkTypes = model => {
+  console.log(typeof model)
   let ts = []
 
-  const tNames = model.models.map(m => {
+  const tNames = model.map(m => {
     ts = ts.concat(
-      m.params.map(p => p['type']).filter(p => typeDefault.indexOf(p) < 0)
+      m.fields.map(p => p['type']).filter(p => Types.indexOf(p) < 0)
     );
 
     return m.name
   });
+
+  console.log(tNames)
 
   let errors = [];
 
@@ -45,6 +45,7 @@ const checkTypes = model => {
     if (tNames.indexOf(t) < 0) {
       errors.push(`"${t}" is referenced as a type in params but was never defined`)
     }
+    return true;
   });
 
   return errors;
@@ -54,23 +55,24 @@ const checkTypes = model => {
  * validates a model of the JSON ddl
  */
 const validateModelDef = model => {
-
   const schema = modelDefSchema;
 
-  const result = Joi.validate(model, schema);
+  const result = Joi.validate(model, schema, { abortEarly: false });
 
   if (result.error === null) {
     // here check if types all exist
-    const errors = checkTypes(model);
+    const errors = checkTypes(JSON.parse(model));
 
     if (errors.length > 0) {
-      return {status: false, error: errors};
+      return {status: false, errors};
     } else {
-      return {status: true, error: null};
+      return {status: true, errors: null};
     }
   } else {
-    return {status: false, error: result.error.details};
+    const errors = result.error.details.map(x => x.message + ' ' + JSON.stringify(x.path));
+
+    return {status: false, errors};
   }
 }
 
-module.exports = {validateModelDef};
+export { validateModelDef };

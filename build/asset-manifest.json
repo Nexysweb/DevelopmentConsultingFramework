@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/Nexysweb/DevelopmentConsultingFramework/static/js/main.92b3795d.chunk.js",
+    "main.js.map": "/Nexysweb/DevelopmentConsultingFramework/static/js/main.92b3795d.chunk.js.map",
+    "runtime-main.js": "/Nexysweb/DevelopmentConsultingFramework/static/js/runtime-main.9429cd37.js",
+    "runtime-main.js.map": "/Nexysweb/DevelopmentConsultingFramework/static/js/runtime-main.9429cd37.js.map",
+    "static/js/2.2582375f.chunk.js": "/Nexysweb/DevelopmentConsultingFramework/static/js/2.2582375f.chunk.js",
+    "static/js/2.2582375f.chunk.js.map": "/Nexysweb/DevelopmentConsultingFramework/static/js/2.2582375f.chunk.js.map",
+    "index.html": "/Nexysweb/DevelopmentConsultingFramework/index.html",
+    "precache-manifest.a20dab65aff5be359f84353cdd7ee91d.js": "/Nexysweb/DevelopmentConsultingFramework/precache-manifest.a20dab65aff5be359f84353cdd7ee91d.js",
+    "service-worker.js": "/Nexysweb/DevelopmentConsultingFramework/service-worker.js"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9429cd37.js",
+    "static/js/2.2582375f.chunk.js",
+    "static/js/main.92b3795d.chunk.js"
+  ]
+}
