@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Country",
+    "fields": [
+      {
+        "name": "name",
+        "type": "String",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "City",
+    "fields": [
+      {
+        "name": "country",
+        "type": "Country",
+        "optional": false
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "optonal": false
+      }
+    ]
+  }
+]
