@@ -102,14 +102,16 @@
 ]
 ```
 
-## Params
+We define an array of entities. All entities have attributes and are assigned primary keys in the form of ids or uuids.
+
+## Entity
 
 
 | Arg Name    |  Possible values                                                | Default     |
 |-------------|-----------------------------------------------------------------|-------------|
 | Name        | *field name*                                                    | -           |
-| fieldType   | [see section](#field-types)                                     | string      |
-| isOptional  | true/false                                                      | `false`     |
+| type        | [see section](#field-types)                                     | string      |
+| optional    | true/false                                                      | `false`     |
 | constraints | [see section](#constraints)                                     | `[]`        |
 | ui          | {textarea, datepicker, slider, etc..}                           | `fieldType` |
 
@@ -126,7 +128,7 @@
 | date     | 2019-01-31           |
 | datetime | 2019-01-31 15:23     |
 | time     | 15:23                |
-| foreign  | country              |
+| foreign  | Country              |
 
 #### mapping SQL JSON-ddl
 
