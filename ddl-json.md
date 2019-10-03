@@ -80,7 +80,9 @@ LocalDate => Datetime
 
 ## Checking format
 
-The format can be checked with the `schema-validation`: https://github.com/Nexysweb/DevelopmentConsultingFramework/blob/master/src/schema-validation.js
+The format can be checked with the `schema-validation`: https://nexysweb.github.io/DevelopmentConsultingFramework/build/
+
+source: https://github.com/Nexysweb/DevelopmentConsultingFramework/blob/master/src/schema-validation.js
 
 ## Variable types
 
