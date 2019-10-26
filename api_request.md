@@ -25,7 +25,7 @@ https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods
 
 #### Default value
 
-a default value can be assigned with the parameter
+a default value can be assigned with the parameter. This happens when comparing the values received by the user and the ones expectedc by the API endpoint.
 
 #### Parameter mapping
 
