@@ -35,3 +35,5 @@ For instance, the API definition expects `myParam` as a query parameter (i.e. `?
 Notes on URL:
 https://www.mattcutts.com/blog/seo-glossary-url-definitions/
 https://url.spec.whatwg.org/#url-apis-elsewhere
+
+![API request](./api_request.svg)
