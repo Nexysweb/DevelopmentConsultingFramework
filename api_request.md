@@ -32,8 +32,17 @@ a default value can be assigned with the parameter. This happens when comparing 
 sometimes it is useful to override the definition of the parameter with a different name and/or parameter location.
 For instance, the API definition expects `myParam` as a query parameter (i.e. `?myParam=myValue`) and we would like to pass the parameter in the payload. Hence we change override the location of the parameter.
 
-Notes on URL:
-https://www.mattcutts.com/blog/seo-glossary-url-definitions/
-https://url.spec.whatwg.org/#url-apis-elsewhere
+### Notes on URL:
+
+A URL is made of different parts
+* protocol: `https`, `https`
+* host: `mydomain.com`
+* path: `/my/path`
+* query: `?p=1&q=2`
+
+
+see
+* https://www.mattcutts.com/blog/seo-glossary-url-definitions/
+* https://url.spec.whatwg.org/#url-apis-elsewhere
 
 ![API request](./api_request.svg)
