@@ -40,9 +40,12 @@ A URL is made of different parts
 * path: `/my/path`
 * query: `?p=1&q=2`
 
+`uri` should not be used, it is officially deprec ated because it is misleading.
+ > Standardize on the term URL. URI and IRI are just confusing. In practice a single algorithm is used for both so keeping them distinct is not helping anyone. URL also easily wins the search result popularity contest.
 
 see
 * https://www.mattcutts.com/blog/seo-glossary-url-definitions/
 * https://url.spec.whatwg.org/#url-apis-elsewhere
+* https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
 
 ![API request](./api_request.svg)
