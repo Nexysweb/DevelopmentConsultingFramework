@@ -40,7 +40,7 @@ A URL is made of different parts
 * path: `/my/path`
 * query: `?p=1&q=2`
 
-`uri` should not be used, it is officially deprec ated because it is misleading.
+`uri` should not be used, it is officially deprecated.
  > Standardize on the term URL. URI and IRI are just confusing. In practice a single algorithm is used for both so keeping them distinct is not helping anyone. URL also easily wins the search result popularity contest.
 
 see
