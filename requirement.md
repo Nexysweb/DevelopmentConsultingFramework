@@ -28,3 +28,13 @@ Besides these criteria for individual requirements, three criteria apply to the 
 ## Requirements workflow
 
 ![requirements workflow](requirements-workflow.svg)
+
+ `t`: output from UAT
+ `r`: requirement
+ `i`: issue
+ 
+ note that
+ * one `t` can point to many `r`
+ * two different `t` can point to the same `r`
+ * one `r` can point to many `i`
+ * ideally, two different `r` never point to the same `i`
