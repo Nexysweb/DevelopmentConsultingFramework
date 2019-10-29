@@ -1,6 +1,6 @@
 # Requirement
 
-### Characteristics of a Good Requirement
+## Characteristics of a Good Requirement
 
 *the following has been taken and copied from [Informit](http://www.informit.com/articles/article.aspx?p=1152528&seqNum=4)*
 
@@ -23,3 +23,8 @@ Besides these criteria for individual requirements, three criteria apply to the 
 * Consistent
 * Nonredundant
 * Complete
+
+
+## Requirements workflow
+
+![requirements workflow]('./requirements-workflow)
