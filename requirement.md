@@ -27,4 +27,4 @@ Besides these criteria for individual requirements, three criteria apply to the 
 
 ## Requirements workflow
 
-![requirements workflow]('./requirements-workflow)
+![requirements workflow]('./requirements-workflow.svg)
