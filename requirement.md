@@ -34,6 +34,7 @@ Besides these criteria for individual requirements, three criteria apply to the 
  `i`: issue
  
  note that
+ * the cardinality of `t`, `r` and `i` (`n`, `m`, and `p`) can but does not have to be equal
  * one `t` can point to many `r`
  * two different `t` can point to the same `r`
  * one `r` can point to many `i`
