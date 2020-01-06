@@ -2,8 +2,7 @@
 
 A URL are made of different parts
 * protocol: `https`, `https`
-* subdomain: `app`
-* host: `mydomain.com`
+* host (comprises subdomain): `mydomain.com`
 * path: `/my/path`
 * query: `?p=1&q=2`
 
