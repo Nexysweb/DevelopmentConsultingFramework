@@ -1,9 +1,9 @@
 ### URL
 
 A URL are made of different parts
-* protocol: `https`, `https`
-* host (comprises subdomain): `mydomain.com`
-* path: `/my/path`
+* protocol: `http`, `https` => ssl certificates
+* host (comprises subdomain): `mydomain.com` => domain setup, subdomain configuration
+* path: `/my/path` => route setup for static apps
 * query: `?p=1&q=2`
 
 `uri` should not be used, it is officially deprecated.
