@@ -16,15 +16,9 @@ In our workflow case, a state waits for an input from the user or a trigger.
 
 A transition moves from one state to another and executes actions in the background.
 
-## Permissions
-
-permissions are assigned to states, so that only users with the right permission can access a particular state.
-
 ## Actions
 
 Every transaction has a set of actions that are associated to it. There can be different types of actions, described below
-
-### Entity CRUD
 
 ### API Request
 
@@ -38,12 +32,19 @@ A chain is a list of API calls that happen in series
 
 Wraps an API request and maps local workflow state (the one associated with the chain) with the API request. It also indicates in which order API requests are executed
 
-
 #### Data Mappers
 
 are functions that take a set of args `(in_1, in_2, ...)` and returns another set `(out_1, out_2, ...)`. Note that the cardinality and the individual types of `i` and `o` can be different.
 
 Data mappers are typically included between two chain units
+
+#### Reusability and composability
+
+chains can (and should) be reused. Given their design it is also easy to include a chain in a chain creating multi level chains.
+
+#### Code Snippet
+
+As part of a chain unit, one can also create a code snippet. This allows to write simple logic nevertherless having access to the whole context `ctx` which gives access to CRUD operations, email services, etc.
 
 ##### Example
 
@@ -53,15 +54,30 @@ The data mappers hence is a function with `in = ("Money owned: 50 USD")` and `ou
 
 `out = f(in)`
 
-#### Scheduler
+## Async workflow
 
-Chains can be scheduled like a [cron](https://en.wikipedia.org/wiki/Cron#Overview).
+on top of the regular transition state logic, we introduce async transitions. These transitions are triggered by a time event (vs a user event). There are two types:
+* delays
+* cron
 
-#### Reusability and composability
+### Delays
 
-chains can (and should) be reused. Given their design it is also easy to include a chain in a chain creating multi level chains.
+Delay transitions are executed after waiting a certain time `t` after arriving at a node.
 
-### Email sending
+Example: password recovery expires after 24h. The transitions is triggered and the password can no longer be reset.
 
-is handled via API request
+### CRON
+
+CRON transition are executed if they fulfill a CRON pattern after arriving at a node. see https://en.wikipedia.org/wiki/Cron#Overview.
+
+Example: a reminder is sent Monday at 8AM.
+
+
+## Actions
+
+Every transaction has a set of actions that are associated to it. There can be different types of actions, described below
+
+
+
+
 
