@@ -29,9 +29,9 @@ Besides these criteria for individual requirements, three criteria apply to the 
 
 ![requirements workflow](requirements-workflow.svg)
 
- `t`: output from UAT
- `r`: requirement
- `i`: issue
+ * `t`: output from UAT
+ * `r`: requirement
+ * `i`: issue
  
  note that
  * the cardinality of `t`, `r` and `i` (`n`, `m`, and `p`) can but does not have to be equal
